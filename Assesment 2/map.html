@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<title>Assesment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Toggle &times;</button>
+        <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-pie-chart"></i>Dashboard</a>
+        <a href="profile.html" class="w3-bar-item w3-button"><i class="fa fa-user-circle-o"></i>User Profile</a>
+        <a href="form.html" class="w3-bar-item w3-button"><i class="fa fa-envelope-o"></i>Form</a>
+        <a href="map.html" class="w3-bar-item w3-button"><i class="fa fa-map-marker"></i>Maps</a>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+    <div>
+        <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+        <div class="container33">
+            <iframe class="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.40743193974!2d-122.17190768520116!3d37.42747873983833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2a678bea9d%3A0x29cdf01a44fc687f!2sStanford%20University!5e0!3m2!1sen!2sin!4v1614089102652!5m2!1sen!2sin"
+                width="900px" height="450px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="container3">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.40743193974!2d-122.17190768520116!3d37.42747873983833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2a678bea9d%3A0x29cdf01a44fc687f!2sStanford%20University!5e0!3m2!1sen!2sin!4v1614089102652!5m2!1sen!2sin"
+                width="300px" height="450px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
